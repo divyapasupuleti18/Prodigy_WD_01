@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #c41717;
+    color: #ffe;
+}
+
+nav ul li a.active {
+    background-color: #333;
+    color: rgb(0, 255, 208);
+}
+
+.content {
+    padding-top: 60px; /* To avoid content hiding behind the fixed nav */
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+#home {
+    background-color: rgb(176, 27, 27);
+}
+
+#about {
+    background-color: palevioletred;
+}
+
+#services {
+    background-color: rgb(255, 168, 28);
+}
+
+#contact {
+    background-color: rgb(23, 180, 54);
+}
